@@ -11,7 +11,7 @@ import com.example.maproject.Fragment.HomeFragment;
 import com.example.maproject.Fragment.MoreFragment;
 import com.example.maproject.Fragment.ProductFragment;
 import com.example.maproject.Fragment.ProfileFragment;
-import com.example.maproject.Fragment.VdieoFragment;
+import com.example.maproject.Fragment.VideoFragment;
 import com.example.maproject.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else if (item.getItemId() == R.id.menuVdo)
             {
-                showFragment(new VdieoFragment());
+                showFragment(new VideoFragment());
             } else if (item.getItemId() == R.id.menuProfile) {
 
                 showFragment(new ProfileFragment());
