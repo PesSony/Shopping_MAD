@@ -1,4 +1,4 @@
-package com.example.maproject;
+package com.example.maproject.View.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -7,11 +7,12 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
-import com.example.maproject.Fragment.HomeFragment;
-import com.example.maproject.Fragment.MoreFragment;
-import com.example.maproject.Fragment.ProductFragment;
-import com.example.maproject.Fragment.ProfileFragment;
-import com.example.maproject.Fragment.VideoFragment;
+import com.example.maproject.R;
+import com.example.maproject.View.Fragment.HomeFragment;
+import com.example.maproject.View.Fragment.MoreFragment;
+import com.example.maproject.View.Fragment.ProductFragment;
+import com.example.maproject.View.Fragment.ProfileFragment;
+import com.example.maproject.View.Fragment.VideoFragment;
 import com.example.maproject.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

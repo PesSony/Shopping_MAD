@@ -1,14 +1,15 @@
-package com.example.maproject
+package com.example.maproject.View.Activity
 
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.maproject.Fragment.HomeFragment
-import com.example.maproject.Fragment.MoreFragment
-import com.example.maproject.Fragment.ProductFragment
-import com.example.maproject.Fragment.ProfileFragment
-import com.example.maproject.Fragment.VideoFragment
+import com.example.maproject.R
+import com.example.maproject.View.Fragment.HomeFragment
+import com.example.maproject.View.Fragment.MoreFragment
+import com.example.maproject.View.Fragment.ProductFragment
+import com.example.maproject.View.Fragment.ProfileFragment
+import com.example.maproject.View.Fragment.VideoFragment
 import com.example.maproject.databinding.ActivityMainBinding
 
 class MainActivityKotlin: AppCompatActivity() {
@@ -29,11 +30,11 @@ class MainActivityKotlin: AppCompatActivity() {
 
             when(it.itemId)
             {
-                R.id.menuHome   -> showFragment(HomeFragment());
-                R.id.menuVdo    -> showFragment(VideoFragment());
-                R.id.menuProfile-> showFragment(ProfileFragment());
-                R.id.menuProduct-> showFragment(ProductFragment());
-                R.id.menuMore   -> showFragment(MoreFragment());
+                R.id.menuHome -> showFragment(HomeFragment());
+                R.id.menuVdo -> showFragment(VideoFragment());
+                R.id.menuProfile -> showFragment(ProfileFragment());
+                R.id.menuProduct -> showFragment(ProductFragment());
+                R.id.menuMore -> showFragment(MoreFragment());
             }
             true;
 
