@@ -1,4 +1,4 @@
-package com.example.maproject.Fragment;
+package com.example.maproject.View.Fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,17 +9,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.maproject.databinding.FragmentProductBinding;
+import com.example.maproject.databinding.FragmentHomeBinding;
 
-public class ProductFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
-    private FragmentProductBinding binding;
-
+    private FragmentHomeBinding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = FragmentProductBinding.inflate(inflater,container,false);
+        binding = FragmentHomeBinding.inflate(inflater,container,false);
         return binding.getRoot();
     }
 }

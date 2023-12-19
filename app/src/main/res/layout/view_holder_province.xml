@@ -15,7 +15,7 @@
     <ImageView
 
         android:id="@+id/imgProvince"
-        android:src="@drawable/ic_launcher_foreground"
+        android:src="@drawable/facebook"
         android:scaleType="centerCrop"
         android:layout_width="50dp"
         android:layout_height="50dp"/>
