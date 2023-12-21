@@ -6,4 +6,9 @@
     <string name="profile">Profile</string>
     <string name="product">Product</string>
     <string name="more">More</string>
+
+<!--    String Product-->
+    <string name="Price">25$</string>
+    <string name="Products_Name">Nice Shoes</string>
+    <string name="Search_Products">search here...</string>
 </resources>
