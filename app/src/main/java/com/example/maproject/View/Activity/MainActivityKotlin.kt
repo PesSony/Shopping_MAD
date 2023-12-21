@@ -31,7 +31,6 @@ class MainActivityKotlin: AppCompatActivity() {
             when(it.itemId)
             {
                 R.id.menuHome -> showFragment(HomeFragment());
-                R.id.menuVdo -> showFragment(VideoFragment());
                 R.id.menuProfile -> showFragment(ProfileFragment());
                 R.id.menuProduct -> showFragment(ProductFragment());
                 R.id.menuMore -> showFragment(MoreFragment());
