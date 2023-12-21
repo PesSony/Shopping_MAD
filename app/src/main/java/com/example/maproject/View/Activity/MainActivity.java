@@ -37,10 +37,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 showFragment(new HomeFragment());
             }
-            else if (item.getItemId() == R.id.menuVdo)
-            {
-                showFragment(new VideoFragment());
-            } else if (item.getItemId() == R.id.menuProfile) {
+             else if (item.getItemId() == R.id.menuProfile) {
 
                 showFragment(new ProfileFragment());
 
