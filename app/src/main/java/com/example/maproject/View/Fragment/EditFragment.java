@@ -39,6 +39,17 @@ public class EditFragment extends Fragment {
             }
         });
 
+        binding.btnBack1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Fragment fragmentPF = new ProfileFragment();
+                FragmentTransaction fm = getFragmentManager().beginTransaction();
+                fm.replace(R.id.layoutFragment, fragmentPF);
+                fm.commit();
+
+            }
+        });
 
 
         return binding.getRoot();
