@@ -7,8 +7,32 @@
     <string name="product">Product</string>
     <string name="more">More</string>
 
-<!--    String Product-->
+    <!--    String Product-->
     <string name="Price">25$</string>
     <string name="Products_Name">Nice Shoes</string>
     <string name="Search_Products">search here...</string>
+
+
+    <!--My Profile Page-->
+    <string name="txt_labelCardView">50% off</string>
+    <string name="myprofile">My Profile</string>
+    <string name="fullname">Full Name</string>
+    <string name="myname">Nouk Raksa</string>
+    <string name="Email">Email</string>
+    <string name="myEmail">noukraksa27@gmail.com</string>
+    <string name="gmail.com">Email...</string>
+    <string name="Gender">Gender</string>
+    <string name="myGender">Male</string>
+    <string name="sex">Male/Female</string>
+    <string name="DateofBirth">Date of Birth</string>
+    <string name="myDateofBirth">27/11/####</string>
+    <string name="DofB">##/##/200#</string>
+    <string name="Address">Address</string>
+    <string name="myAddress">Sompovlun ,BatdomBong</string>
+    <string name="Addr">........</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
