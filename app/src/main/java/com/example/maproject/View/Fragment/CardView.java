@@ -10,7 +10,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.maproject.databinding.CardViewFragmentBinding;
-import com.example.maproject.databinding.FragmentVdoBinding;
 
 public class CardView extends Fragment {
 

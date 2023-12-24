@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentProfile"
+    android:layout_width="match_parent"
+    tools:context=".View.Activity.MainActivityKotlin"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarProfileiiFragment"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/blue_custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBackHome"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:contentDescription="No"
+            android:src="@mipmap/icon_back"/>
+
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:paddingVertical="2dp"
+            android:fontFamily="serif-monospace"
+            android:id="@+id/txtFrmTitle"
+            android:layout_marginHorizontal="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="My Profille"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:layout_marginRight="20dp"
+            android:layout_gravity="end"
+            android:id="@+id/btnEdit"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:contentDescription="No"
+            android:src="@mipmap/icon_edit" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/boxProfile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/blue_custom50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBarProfileiiFragment" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginVertical="30dp"
+            app:cardCornerRadius="40dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="150dp"
+            android:layout_width="110dp"
+            android:layout_height="115dp">
+            <RelativeLayout
+                android:id="@+id/myprofile"
+                android:background="@drawable/myprofile"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/myname"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myname"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtLabelUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/fullname"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boxProfile" />
+
+    <EditText
+
+        android:id="@+id/txtValueUserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/bgk_valuetxt_fracc"
+        android:elevation="2dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="@string/myname"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txtLabelUserName"
+        app:layout_constraintTop_toBottomOf="@id/txtLabelUserName" />
+
+    <TextView
+        android:id="@+id/txtLabelEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/Email"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtValueUserName" />
+
+    <EditText
+        android:id="@+id/txtValueEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/bgk_valuetxt_fracc"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="@string/myEmail"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txtLabelEmail"
+        app:layout_constraintTop_toBottomOf="@id/txtLabelEmail" />
+
+    <TextView
+        android:id="@+id/txtLabelGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/Gender"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtValueEmail" />
+
+    <EditText
+        android:id="@+id/txtValueGender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/bgk_valuetxt_fracc"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="@string/myGender"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txtLabelGender"
+        app:layout_constraintTop_toBottomOf="@id/txtLabelGender" />
+
+    <TextView
+        android:id="@+id/txtLabelBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/DateofBirth"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtValueGender" />
+
+    <EditText
+        android:id="@+id/txtValueBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/bgk_valuetxt_fracc"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="@string/myDateofBirth"
+        android:paddingHorizontal="4dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txtLabelBirthday"
+        app:layout_constraintTop_toBottomOf="@id/txtLabelBirthday" />
+
+    <TextView
+        android:id="@+id/txtLabelAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/Address"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtValueBirthday" />
+
+    <EditText
+        android:id="@+id/txtValueAddress"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/bgk_valuetxt_fracc"
+        android:elevation="2dp"
+        android:textStyle="bold"
+        android:text="@string/myAddress"
+        android:paddingHorizontal="4dp"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txtLabelAddress"
+        app:layout_constraintTop_toBottomOf="@id/txtLabelAddress" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

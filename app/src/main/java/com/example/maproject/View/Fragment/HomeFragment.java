@@ -27,7 +27,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Fragment fragmentPF = new ProfileFragment();
+                Fragment fragmentPF = new ProfileHomePage();
                 FragmentTransaction fm = getFragmentManager().beginTransaction();
                 fm.replace(R.id.layoutFragment, fragmentPF);
                 fm.commit();
