@@ -31,16 +31,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ProfileFragment extends Fragment {
 
 
-    Button gofragment;
     private FragmentProfileBinding binding;
 
-//    @Nullable
-//    @Override
-//    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-//        binding = FragmentProfileBinding.inflate(inflater, container, false);
-//        return binding.getRoot();
-//    }
-//}
 
 
     @Nullable
@@ -53,9 +45,9 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Fragment homefragment = new HomeFragment();
+                Fragment pageProfilefragment = new PageProfileFragment();
                 FragmentTransaction fm = getFragmentManager().beginTransaction();
-                fm.replace(R.id.layoutFragment, homefragment);
+                fm.replace(R.id.layoutFragment, pageProfilefragment);
 
                 fm.commit();
 

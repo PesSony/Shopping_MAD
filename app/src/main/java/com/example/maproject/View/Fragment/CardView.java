@@ -9,16 +9,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.maproject.databinding.CardViewFragmentBinding;
 import com.example.maproject.databinding.FragmentVdoBinding;
 
-public class VideoFragment extends Fragment {
+public class CardView extends Fragment {
 
-    private FragmentVdoBinding binding;
+    private CardViewFragmentBinding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = FragmentVdoBinding.inflate(inflater,container,false);
+        binding = CardViewFragmentBinding.inflate(inflater,container,false);
         return binding.getRoot();
     }
 }
