@@ -1,5 +1,6 @@
 package com.example.maproject.View.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,19 +12,22 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.maproject.R;
-import com.example.maproject.databinding.FragmentHomeBinding;
+import com.example.maproject.View.Activity.MainActivity;
+import com.example.maproject.databinding.FragmentEditBinding;
 
-public class HomeFragment extends Fragment {
+public class EditFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+
+    FragmentEditBinding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = FragmentHomeBinding.inflate(inflater,container,false);
+        binding = FragmentEditBinding.inflate(inflater,container,false);
 
 
-        binding.iconPro.setOnClickListener(new View.OnClickListener() {
+
+        binding.btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -34,6 +38,21 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
+        binding.btnBack1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Fragment fragmentPF = new ProfileFragment();
+                FragmentTransaction fm = getFragmentManager().beginTransaction();
+                fm.replace(R.id.layoutFragment, fragmentPF);
+                fm.commit();
+
+            }
+        });
+
+
         return binding.getRoot();
+
     }
 }

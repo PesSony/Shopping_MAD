@@ -1,17 +1,23 @@
 package com.example.maproject.View.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.maproject.API.Service.apiServiceProvince;
 import com.example.maproject.API.model.Province;
+import com.example.maproject.R;
+import com.example.maproject.View.Activity.MainActivity;
 import com.example.maproject.databinding.FragmentProfileBinding;
 
 import java.util.List;
@@ -24,13 +30,52 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ProfileFragment extends Fragment {
 
+
+    Button gofragment;
     private FragmentProfileBinding binding;
+
+//    @Nullable
+//    @Override
+//    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+//        binding = FragmentProfileBinding.inflate(inflater, container, false);
+//        return binding.getRoot();
+//    }
+//}
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentProfileBinding.inflate(inflater,container,false);
-        return  binding.getRoot();
+
+
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Fragment homefragment = new HomeFragment();
+                FragmentTransaction fm = getFragmentManager().beginTransaction();
+                fm.replace(R.id.layoutFragment, homefragment);
+
+                fm.commit();
+
+            }
+        });
+
+        binding.btnEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Fragment editfragment = new EditFragment();
+                FragmentTransaction fm = getFragmentManager().beginTransaction();
+                fm.replace(R.id.layoutFragment, editfragment);
+
+                fm.commit();
+
+            }
+        });
+
+        return binding.getRoot();
     }
 
     @Override
@@ -38,33 +83,12 @@ public class ProfileFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
-        loadProvinceList();
     }
-
-    private void loadProvinceList()
+    public void onDestroy()
     {
-//        create Retrofit Object
+        super.onDestroy();
+        binding= null;
 
-        Retrofit httpClien = new Retrofit.Builder()
-                .baseUrl("https://tests3bk.s3.ap-southeast-1.amazonaws.com/")
-                .addConverterFactory(GsonConverterFactory.create()).build();
-
-//        create service object
-        apiServiceProvince apiService = httpClien.create(apiServiceProvince.class);
-
-        Call<List<Province>> task = apiService.loadProvinceList();
-
-        task.enqueue(new Callback<List<Province>>() {
-            @Override
-            public void onResponse(Call<List<Province>> call, Response<List<Province>> response) {
-                Toast.makeText(getContext(), "Province List Received", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onFailure(Call<List<Province>> call, Throwable t) {
-                Toast.makeText(getContext(), "Province List Fail", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-    }
+    };
 }
+

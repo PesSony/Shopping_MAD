@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Activity.MainActivityKotlin"
     android:background="#CCCCCC">
 
 
-    <androidx.core.widget.NestedScrollView
+    <HorizontalScrollView
         android:id="@+id/scrollDek"
-        android:layout_width="820dp"
-        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginVertical="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="170dp"
+            android:layout_height="470dp"
             android:layout_marginHorizontal="10dp"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2">
+            android:orientation="horizontal">
 
 
             <LinearLayout
-                app:cardElevation="10dp"
                 android:id="@+id/box1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@color/white"
                 android:orientation="vertical"
+                app:cardElevation="10dp"
                 app:layout_constraintStart_toStartOf="parent">
 
 
@@ -215,9 +213,9 @@
                     app:layout_constraintTop_toBottomOf="@+id/textViewPriceRow0Col0" />
 
             </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
 
-    </androidx.core.widget.NestedScrollView>
+    </HorizontalScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

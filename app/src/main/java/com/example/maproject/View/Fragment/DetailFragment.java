@@ -11,29 +11,30 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.maproject.R;
-import com.example.maproject.databinding.FragmentHomeBinding;
+import com.example.maproject.databinding.DetailLayoutBinding;
 
-public class HomeFragment extends Fragment {
+public class DetailFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
+
+    private DetailLayoutBinding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = FragmentHomeBinding.inflate(inflater,container,false);
+        binding = DetailLayoutBinding.inflate(inflater, container,false);
 
 
-        binding.iconPro.setOnClickListener(new View.OnClickListener() {
+
+        binding.btnBackDetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Fragment fragmentPF = new ProfileFragment();
+                Fragment backProduct =new ProductFragment();
                 FragmentTransaction fm = getFragmentManager().beginTransaction();
-                fm.replace(R.id.layoutFragment, fragmentPF);
+                fm.replace(R.id.layoutFragment,backProduct);
                 fm.commit();
-
             }
         });
+
         return binding.getRoot();
     }
 }
