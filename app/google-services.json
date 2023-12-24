@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "719293783507",
+    "project_id": "mylogin-dc26e",
+    "storage_bucket": "mylogin-dc26e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719293783507:android:7b1d88081d6eec98af2326",
+        "android_client_info": {
+          "package_name": "com.example.maproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719293783507-urnnde6ghss2e9udaf7lrfv98hgnj68m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0RCN1TrX-TzZE0H8P4wOTZC98jXlTIbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719293783507-urnnde6ghss2e9udaf7lrfv98hgnj68m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719293783507:android:4bbce4fff63998a3af2326",
+        "android_client_info": {
+          "package_name": "shoponline.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719293783507-1dath1f7knsscttuslh8up7gr5up14na.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shoponline.com",
+            "certificate_hash": "49b35be901491aad4ec8b8eafafaf07e3ae94f16"
+          }
+        },
+        {
+          "client_id": "719293783507-urnnde6ghss2e9udaf7lrfv98hgnj68m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0RCN1TrX-TzZE0H8P4wOTZC98jXlTIbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719293783507-urnnde6ghss2e9udaf7lrfv98hgnj68m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
