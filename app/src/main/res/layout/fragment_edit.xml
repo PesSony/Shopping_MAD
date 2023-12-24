@@ -22,7 +22,7 @@
             android:background="@null"
             android:contentDescription="No"
 
-            android:src="@mipmap/icon_back"></ImageButton>
+            android:src="@mipmap/icon_back"/>
 
 
         <TextView

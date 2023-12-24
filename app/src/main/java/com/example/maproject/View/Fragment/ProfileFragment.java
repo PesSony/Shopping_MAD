@@ -48,6 +48,20 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentProfileBinding.inflate(inflater,container,false);
 
+
+        binding.btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Fragment homefragment = new HomeFragment();
+                FragmentTransaction fm = getFragmentManager().beginTransaction();
+                fm.replace(R.id.layoutFragment, homefragment);
+
+                fm.commit();
+
+            }
+        });
+
         binding.btnEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,25 +88,6 @@ public class ProfileFragment extends Fragment {
     {
         super.onDestroy();
         binding= null;
-
-
-//
-//        View view = inflater.inflate(R.layout.edit_profile, container, false);
-//
-//
-//        gofragment = view.findViewById(R.id.btnEdit);
-//
-//
-//        gofragment.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-
-//            }
-//
-//
-//
-//        });
-//        return view;
 
     };
 }

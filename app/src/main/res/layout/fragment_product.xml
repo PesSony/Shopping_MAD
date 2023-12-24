@@ -10,6 +10,8 @@
         android:layout_height="wrap_content"
         android:background="@color/blue_custom"
         android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
@@ -35,12 +37,15 @@
             android:layout_height="46dp"
             android:layout_gravity="center"
             android:layout_marginVertical="20dp"
-            android:drawablePadding="8dp"
+            android:drawablePadding="18dp"
             android:ems="10"
             android:hint="@string/Search_Products"
             android:inputType="textPersonName"
             android:paddingLeft="15dp"
             android:paddingEnd="15dp"
+            android:paddingBottom="20dp"
+
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

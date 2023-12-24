@@ -17,10 +17,10 @@
 
 
         <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/detailActualToolbar"
+
+            android:id="@+id/btnBackDetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             app:navigationIcon="@mipmap/icon_back"
             app:title="Details"
             app:titleTextColor="@color/white" />
@@ -44,6 +44,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:background="#CCCCCC"
                 android:id="@+id/ivDetails"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,8 +77,8 @@
             style="@style/TextAppearance.MaterialComponents.Headline5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adidas Predator Gladiator"
-            android:textColor="@color/black"
+            android:text="Nike Air Fore 1"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
 
@@ -88,13 +89,14 @@
             android:maxLines="4"
             android:padding="3dp"
             android:text="@string/JordanDesciption"
-            android:textColor="@color/greyishtext" />
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Select size"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
 
@@ -123,15 +125,16 @@
                     android:layout_height="wrap_content"
                     android:padding="5dp"
                     android:text="Price"
-                    android:textColor="@color/greyishtext"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/tvDetailsProductPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="25$"
-                    android:textColor="@color/black"
+                    android:text="25.00$"
+                    android:textColor="@color/white"
                     android:textSize="22sp"
                     android:textStyle="bold" />
 
