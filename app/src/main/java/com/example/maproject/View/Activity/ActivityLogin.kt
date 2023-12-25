@@ -80,6 +80,8 @@ class ActivityLogin : AppCompatActivity() {
             }
             dialog.show()
         }
+
+
         binding?.signupRedirectText?.setOnClickListener {
             val signupIntent = Intent(this, SignupActivity::class.java)
             startActivity(signupIntent)
