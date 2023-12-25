@@ -11,29 +11,29 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.maproject.R;
-import com.example.maproject.databinding.FragmentHomeBinding;
+import com.example.maproject.databinding.PageProfileBinding;
 
-public class HomeFragment extends Fragment {
-
-    private FragmentHomeBinding binding;
+public class PageProfileFragment extends Fragment {
+    private PageProfileBinding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = FragmentHomeBinding.inflate(inflater,container,false);
+        binding = PageProfileBinding.inflate(inflater,container,false);
 
-
-        binding.iconPro.setOnClickListener(new View.OnClickListener() {
+        binding.containerProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Fragment fragmentPF = new ProfileHomePage();
+                Fragment profilefragment = new ProfileFragment();
                 FragmentTransaction fm = getFragmentManager().beginTransaction();
-                fm.replace(R.id.layoutFragment, fragmentPF);
+                fm.replace(R.id.layoutFragment, profilefragment);
+
                 fm.commit();
 
             }
         });
-        return binding.getRoot();
+
+        return  binding.getRoot();
     }
 }

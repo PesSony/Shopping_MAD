@@ -126,14 +126,14 @@
                     android:padding="5dp"
                     android:text="Price"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textColor="@color/colorRed"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tvDetailsProductPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="25.00$"
+                    android:text="$25.00"
                     android:textColor="@color/white"
                     android:textSize="22sp"
                     android:textStyle="bold" />

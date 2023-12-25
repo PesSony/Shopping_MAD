@@ -20,10 +20,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="24dp"
-
+            android:fontFamily="serif-monospace"
             android:text="Products"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="35sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -121,15 +121,65 @@
                 <ImageView
                     android:id="@+id/btnGo1"
                     android:layout_width="90dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="16dp"
                     android:background="@mipmap/icon_go"
                     android:textSize="25sp"
                     android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/btnGo1"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:text="+"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
             </RelativeLayout>
 
@@ -192,15 +242,64 @@
                 <ImageView
                     android:id="@+id/btngo2"
                     android:layout_width="90dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="16dp"
                     android:background="@mipmap/icon_go"
                     android:textSize="25sp"
                     android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/btngo2"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:text="+"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             </RelativeLayout>
 
@@ -265,15 +364,64 @@
                 <ImageView
                     android:id="@+id/btngo3"
                     android:layout_width="90dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="16dp"
                     android:background="@mipmap/icon_go"
                     android:textSize="25sp"
                     android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/btngo3"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:text="+"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             </RelativeLayout>
 
@@ -338,15 +486,64 @@
                 <ImageView
                     android:id="@+id/btng4"
                     android:layout_width="90dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="16dp"
                     android:background="@mipmap/icon_go"
                     android:textSize="25sp"
                     android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/btng4"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:text="+"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             </RelativeLayout>
 
@@ -411,15 +608,64 @@
                 <ImageView
                     android:id="@+id/btng5"
                     android:layout_width="90dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="16dp"
                     android:background="@mipmap/icon_go"
                     android:textSize="25sp"
                     android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/btng5"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:text="+"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             </RelativeLayout>
 
@@ -484,15 +730,64 @@
                 <ImageView
                     android:id="@+id/btng6"
                     android:layout_width="90dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="16dp"
                     android:background="@mipmap/icon_go"
                     android:textSize="25sp"
                     android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/btng6"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:text="+"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             </RelativeLayout>
 
@@ -556,15 +851,64 @@
                 <ImageView
                     android:id="@+id/btng7"
                     android:layout_width="90dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="16dp"
                     android:background="@mipmap/icon_go"
                     android:textSize="25sp"
                     android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/btng7"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:text="+"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:background="@drawable/o"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             </RelativeLayout>
 

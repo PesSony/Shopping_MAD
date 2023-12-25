@@ -26,7 +26,7 @@ class ProvinceKotlin() : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val layoutManager = LinearLayoutManager(context);
+         val layoutManager = LinearLayoutManager(context);
         binding.recyclerview.layoutManager = layoutManager;
 
         val adapter = ProvinceAdapterKotlin();

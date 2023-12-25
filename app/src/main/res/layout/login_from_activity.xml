@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bghome"
-    tools:context=".View.Fragment.LoginActivity">
+    tools:context=".View.Activity.ActivityLogin">
 
     <ImageView
         android:id="@+id/textView15"
@@ -43,7 +43,7 @@
             android:layout_height="match_parent"
             android:hint="Email"
             android:paddingHorizontal="80dp"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:background="#CCCCCC"/>
 
         <ImageView
@@ -72,7 +72,7 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:paddingHorizontal="80dp"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <ImageView
             android:layout_width="wrap_content"

@@ -12,7 +12,6 @@ import com.example.maproject.View.Fragment.HomeFragment;
 import com.example.maproject.View.Fragment.MoreFragment;
 import com.example.maproject.View.Fragment.ProductFragment;
 import com.example.maproject.View.Fragment.ProfileFragment;
-import com.example.maproject.View.Fragment.VideoFragment;
 import com.example.maproject.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

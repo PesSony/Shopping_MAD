@@ -5,11 +5,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.maproject.R
+import com.example.maproject.View.Fragment.CardView
 import com.example.maproject.View.Fragment.HomeFragment
 import com.example.maproject.View.Fragment.MoreFragment
+import com.example.maproject.View.Fragment.PageProfileFragment
 import com.example.maproject.View.Fragment.ProductFragment
-import com.example.maproject.View.Fragment.ProfileFragment
-import com.example.maproject.View.Fragment.VideoFragment
 import com.example.maproject.databinding.ActivityMainBinding
 
 class MainActivityKotlin: AppCompatActivity() {
@@ -31,9 +31,11 @@ class MainActivityKotlin: AppCompatActivity() {
             when(it.itemId)
             {
                 R.id.menuHome -> showFragment(HomeFragment());
-                R.id.menuProfile -> showFragment(ProfileFragment());
                 R.id.menuProduct -> showFragment(ProductFragment());
+                R.id.menuCard -> showFragment(CardView());
                 R.id.menuMore -> showFragment(MoreFragment());
+                R.id.menuProfile -> showFragment(PageProfileFragment());
+
             }
             true;
 
